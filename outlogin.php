@@ -1,5 +1,5 @@
 <?
-session_start(); // ¼¼¼Ç½ÃÀÛÀÔ´Ï´Ù. Ç×»óÁ©À§¿¡ ÀÖ¾î¾ßÇÕ´Ï´Ù,,
+session_start(); // start session
 ?>
 <script>
 function logout(){
@@ -16,19 +16,19 @@ function join(){
 	if($_SESSION['userID']=="") {
 		echo "<input name='id'> <br>";
 		echo "<input type='password' name='pwd'> <br>";
-		echo "<input type='submit' value='·Î±×ÀÎ'>";
+		echo "<input type='submit' value='ï¿½Î±ï¿½ï¿½ï¿½'>";
 		echo "</form>";
 	}
 	else {
 		$userID = $_SESSION['userID'];
 		$userName = $_SESSION['userName'];
 		?>
-	<script>alert("<?echo($userID)?> ´ÔÀÌ Á¢¼ÓÁßÀÌ°í <?echo($userName)?>´Ô ¹Ý°©½À´Ï´Ù");</script>
+	<script>alert("<?echo($userID)?> ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì°ï¿½ <?echo($userName)?>ï¿½ï¿½ ï¿½Ý°ï¿½ï¿½ï¿½ï¿½Ï´ï¿½");</script>
 	</form>
-	<button name=logout onclick="logout()">·Î±×¾Æ¿ô</button>
+	<button name=logout onclick="logout()">logout</button>
 	<?
 	}
 	?>
-<button name=logout onclick="join()">È¸¿ø°¡ÀÔ</button>	
+<button name=logout onclick="join()">join<button>	
 
 
